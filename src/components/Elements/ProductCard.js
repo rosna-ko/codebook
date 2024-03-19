@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 export const ProductCard = ({product}) => {
 const {id, name, overview, price, poster, best_seller, rating} = product;
 const {cartList, addToCart, removeFromCart} = useCart();
+
 const [isInCart, setIsInCart] = useState(false);
 
 function handleClick(product) {
